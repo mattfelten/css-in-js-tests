@@ -1,11 +1,1 @@
-# `css-modules`
-
-> TODO: description
-
-## Usage
-
-```
-const cssModules = require('css-modules');
-
-// TODO: DEMONSTRATE API
-```
+Based on https://github.com/Keats/webpack-react-typescript

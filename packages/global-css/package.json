@@ -3,12 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "author": "Matt Felten <m@mattfelten.com>",
+  "main": "dist/Button.js",
   "scripts": {
     "start": "sass src:dist",
     "poststart": "tsc",
     "clean": "rimraf dist"
   },
   "dependencies": {
+    "@types/react": "^16.9.43",
     "classnames": "^2.2.6",
     "react": "^16.13.1",
     "sass": "^1.26.10",

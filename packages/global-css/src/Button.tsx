@@ -1,10 +1,10 @@
-import React, { FC, HTMLElement } from 'react';
+import React, { FC, DetailedHTMLProps, HTMLAttributes } from 'react';
 import classnames from 'classnames';
 
 /**
  * Button properties
  */
-export interface ButtonProps extends HTMLElement {
+export interface ButtonProps extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {
 	/** Background color */
 	color?: 'primary' | 'default' | 'negative';
 

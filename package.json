@@ -2,9 +2,11 @@
   "name": "css-in-js-tests",
   "version": "1.0.0",
   "description": "",
+  "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "lerna run start --parallel"
+    "start": "lerna run start --parallel",
+    "install": "lerna bootstrap"
   },
   "author": "",
   "license": "ISC",

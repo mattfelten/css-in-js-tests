@@ -3,6 +3,17 @@
   "version": "0.0.0",
   "private": true,
   "author": "Matt Felten <m@mattfelten.com>",
+  "scripts": {
+    "start": "sass src:dist",
+    "poststart": "tsc",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react": "^16.13.1",
+    "sass": "^1.26.10",
+    "typescript": "^3.9.7"
+  },
   "devDependencies": {
     "rimraf": "^3.0.2"
   }

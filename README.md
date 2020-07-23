@@ -7,6 +7,7 @@ There are a lot of ways of setting an application architecture and not all of th
 - Components are written with Typescript to support better prop typing
 - CSS, when applicable, should be using BEM notation for consistent syntax and collision protection
 - Each method will have a Storybook story attached to verify component variations work
+- Each method will have completely self-defined build steps (no shared dependencies or configs) so recreating these outside the scope of this project is easier
 
 ### Experiment Methods
 - Global CSS

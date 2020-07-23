@@ -1,0 +1,16 @@
+{
+  "name": "storybook",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Matt Felten <m@mattfelten.com>",
+  "scripts": {
+    "start": "start-storybook -c src --quiet"
+  },
+  "dependencies": {
+    "@storybook/react": "^5.3.19",
+    "babel-loader": "^8.1.0",
+    "css-modules": "^0.0.0",
+    "global-css": "^0.0.0",
+    "react": "^16.13.1"
+  }
+}

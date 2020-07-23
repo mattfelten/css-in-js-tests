@@ -1,0 +1,9 @@
+{
+  "name": "global-css",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Matt Felten <m@mattfelten.com>",
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
+}

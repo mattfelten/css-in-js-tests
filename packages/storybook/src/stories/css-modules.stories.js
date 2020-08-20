@@ -1,10 +1,9 @@
 import React from 'react';
 import { boolean, select } from '@storybook/addon-knobs';
-import { Button } from '@a/global-css';
-import '@a/global-css/dist/Button.css';
+import { Button } from '@a/css-modules';
 
 export default {
-	title: 'Global CSS',
+	title: 'CSS Modules',
 	component: Button
 }
 

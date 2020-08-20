@@ -1,5 +1,6 @@
 import React, { forwardRef } from 'react';
 import classnames from 'classnames';
+import styles from './Button.module.scss';
 
 /**
  * Button properties
@@ -57,22 +58,22 @@ export const Button = forwardRef<HTMLElement, ButtonProps>(
 
 		const preventClicks = props.disabled || inactive || loading;
 
-		const ButtonClasses = classnames('Button', className, {
-			'Button--blue': color === 'primary',
-			'Button--grey': color === 'default',
-			'Button--red': color === 'negative',
+		const ButtonClasses = classnames(className, styles.Button, {
+			[styles['Button--blue']]: color === 'primary',
+			[styles['Button--grey']]: color === 'default',
+			[styles['Button--red']]: color === 'negative',
 
-			'Button--solid': fill === 'solid',
-			'Button--outline': fill === 'outline',
-			'Button--subtle': fill === 'subtle',
+			// [styles['Button--solid']]: fill === 'solid',
+			[styles['Button--outline']]: fill === 'outline',
+			[styles['Button--subtle']]: fill === 'subtle',
 
-			'Button--disabled': props.disabled,
-			'Button--inactive': preventClicks,
-			'Button--loading': loading,
+			[styles['Button--disabled']]: props.disabled,
+			[styles['Button--inactive']]: preventClicks,
+			[styles['Button--loading']]: loading,
 
-			'Button--xsmall': size === 'xsmall',
-			'Button--small': size === 'small',
-			'Button--large': size === 'large',
+			[styles['Button--xsmall']]: size === 'xsmall',
+			[styles['Button--small']]: size === 'small',
+			[styles['Button--large']]: size === 'large',
 		});
 
 		return (
@@ -85,7 +86,7 @@ export const Button = forwardRef<HTMLElement, ButtonProps>(
 				ref={ref}
 				{...props}
 			>
-				<span className="Button__content">
+				<span className={styles.Button__content}>
 					{ children }
 				</span>
 			</ButtonElement>

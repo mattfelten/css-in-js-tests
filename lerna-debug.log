@@ -1,0 +1,12 @@
+0 silly argv { _: [ 'add' ],
+0 silly argv   dev: true,
+0 silly argv   D: true,
+0 silly argv   globs: [],
+0 silly argv   lernaVersion: '3.22.1',
+0 silly argv   '$0': 'node_modules/.bin/lerna',
+0 silly argv   pkg: 'react@lastest' }
+1 notice cli v3.22.1
+2 verbose rootPath /Users/mattfelten/Development/personal/css-in-js-tests
+3 error react: No matching version found for react@lastest.
+3 error     at pickManifest (/Users/mattfelten/Development/personal/css-in-js-tests/node_modules/npm-pick-manifest/index.js:122:13)
+3 error     at fetchPackument.then.packument (/Users/mattfelten/Development/personal/css-in-js-tests/node_modules/@evocateur/pacote/lib/fetchers/registry/manifest.js:24:14)

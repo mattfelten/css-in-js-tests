@@ -7,10 +7,17 @@
     "start": "start-storybook -c src --quiet"
   },
   "dependencies": {
-    "@storybook/react": "^5.3.19",
+    "@a/css-modules": "1.0.0",
+    "@a/global-css": "1.0.0",
+    "@types/react": "16.9.46"
+  },
+  "devDependencies": {
+    "@storybook/addon-docs": "6.0.13",
+    "@storybook/addon-knobs": "6.0.13",
+    "@storybook/react": "6.0.13",
     "babel-loader": "^8.1.0",
-    "css-modules": "^0.0.0",
-    "global-css": "^0.0.0",
-    "react": "^16.13.1"
+    "core-js": "3.6.5",
+    "react": "16.13.1",
+    "typescript": "3.9.7"
   }
 }

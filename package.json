@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "lerna run start --parallel",
-    "install": "lerna bootstrap"
+    "prepare": "lerna bootstrap"
   },
   "author": "",
   "license": "ISC",

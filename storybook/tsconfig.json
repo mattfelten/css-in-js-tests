@@ -6,4 +6,7 @@
         "target": "es5",
         "jsx": "react",
     },
+    "include": [
+        "src/**/*"
+    ],
 }

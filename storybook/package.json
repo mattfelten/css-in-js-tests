@@ -8,13 +8,14 @@
   },
   "dependencies": {
     "@a/css-modules": "1.0.0",
-    "@a/global-css": "1.0.0",
-    "@types/react": "16.9.46"
+    "@a/emotion": "1.0.0",
+    "@a/global-css": "1.0.0"
   },
   "devDependencies": {
     "@storybook/addon-docs": "6.0.13",
     "@storybook/addon-knobs": "6.0.13",
     "@storybook/react": "6.0.13",
+    "@types/react": "16.9.46",
     "babel-loader": "^8.1.0",
     "core-js": "3.6.5",
     "react": "16.13.1",

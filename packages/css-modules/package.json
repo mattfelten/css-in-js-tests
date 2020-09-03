@@ -9,7 +9,8 @@
     "dist"
   ],
   "scripts": {
-    "start": "rm -rf dist && rollup -c"
+    "build": "rm -rf dist && rollup -c",
+    "start": "rm -rf dist && rollup -c -w"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "15.0.0",

@@ -5,9 +5,8 @@
   "author": "Matt Felten <m@mattfelten.com>",
   "main": "dist/Button.js",
   "scripts": {
-    "start": "sass src:dist",
-    "poststart": "tsc",
-    "clean": "rimraf dist"
+    "build": "rimraf dist && sass src:dist & tsc",
+    "start": "rimraf dist && sass src:dist --watch & tsc -w"
   },
   "dependencies": {
     "classnames": "^2.2.6",

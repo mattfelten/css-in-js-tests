@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "author": "Matt Felten <m@mattfelten.com>",
-  "main": "dist/Button.js",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
   "scripts": {
-    "build": "rimraf dist && sass src:dist & tsc",
-    "start": "rimraf dist && sass src:dist --watch & tsc -w"
+    "build": "rimraf dist && rollup -c",
+    "start": "rimraf dist && rollup -c -w"
   },
   "dependencies": {
     "classnames": "^2.2.6",
@@ -20,6 +21,7 @@
     "rimraf": "^3.0.2",
     "rollup": "2.26.4",
     "rollup-plugin-peer-deps-external": "2.2.3",
+    "rollup-plugin-scss": "2.6.0",
     "rollup-plugin-typescript2": "0.27.2",
     "sass": "^1.26.10",
     "typescript": "^3.9.7"

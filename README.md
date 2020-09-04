@@ -11,7 +11,12 @@ There are a lot of ways of setting an application architecture and not all of th
 
 ### Experiment Methods
 - Global CSS
+	- Working
 - CSS Modules
-- Styled Components
+	- Working
 - Emotion
+	- Working. Style overriding is much different than CSS and needs a complete overhaul.
+- Stiches
+	- TODO: Doesn't render in Storybook. If I rename the story while Storybook is running, it appears but the component isn't found.
+- Styled Components
 - Others?

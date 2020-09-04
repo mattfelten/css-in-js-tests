@@ -23,9 +23,6 @@ export interface ButtonProps extends Omit<React.HTMLProps<HTMLElement>, 'size'> 
 
 	/** Set size of the button */
 	size?: 'xsmall' | 'small' | 'medium' | 'large';
-
-	/** Set width of button.<br />Possible values: 'auto', a specific unit e.g 50%, 200px, 'full' */
-	width?: string;
 }
 
 const getTabIndex = (el: any) => {
@@ -46,7 +43,6 @@ export const Button = forwardRef<HTMLElement, ButtonProps>(
 			loading,
 			size = 'medium',
 			type = 'button',
-			width = 'auto',
 			...props
 		},
 		ref

@@ -28,14 +28,12 @@ export const knobs = () => (
 			['large', 'medium', 'small', 'xsmall'],
 			'medium'
 		)}
-		full={boolean('full', false)}
 		type={select('type', ['', 'button', 'submit', 'reset'], 'button')}
 		href={select(
 			'href',
 			['', 'https://anvil-react.servicetitan.com/'],
 			''
 		)}
-		iconName={select('icon', [null, 'add', 'edit', 'more_vert'], null)}
 	>
 		{select('children', ['Button', null], 'Button')}
 	</Button>

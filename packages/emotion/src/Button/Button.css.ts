@@ -40,7 +40,6 @@ export const button = css`
 	}
 `;
 
-
 export const outline = css`
 	background-color: transparent;
 	box-shadow: inset 0 0 0 1px currentColor;

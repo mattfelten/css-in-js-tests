@@ -1,0 +1,30 @@
+{
+  "name": "@a/stitches",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Matt Felten <m@mattfelten.com>",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && rollup -c",
+    "start": "rm -rf dist && rollup -c -w"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "15.0.0",
+    "@rollup/plugin-node-resolve": "9.0.0",
+    "@types/react": "16.9.46",
+    "classnames": "^2.2.6",
+    "core-js": "3.6.5",
+    "react": "16.13.1",
+    "rollup": "2.26.4",
+    "rollup-plugin-peer-deps-external": "2.2.3",
+    "rollup-plugin-typescript2": "0.27.2",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "@stitches/react": "0.0.1"
+  }
+}

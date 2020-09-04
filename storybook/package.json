@@ -9,7 +9,8 @@
   "dependencies": {
     "@a/css-modules": "1.0.0",
     "@a/emotion": "1.0.0",
-    "@a/global-css": "1.0.0"
+    "@a/global-css": "1.0.0",
+    "@a/stitches": "1.0.0"
   },
   "devDependencies": {
     "@storybook/addon-docs": "6.0.13",

@@ -188,7 +188,7 @@ export const small = css`
 `;
 
 export const large = css`
-	padding: ${spacing2} (${spacing2} + ${spacinghalf});
+	padding: ${spacing2} calc(${spacing2} + ${spacinghalf});
 `;
 
 const spin = keyframes`

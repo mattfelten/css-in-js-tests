@@ -1,4 +1,4 @@
-import { css, keyframes } from "@emotion/core";
+import { css, keyframes } from "emotion";
 import { colorBlue, colorBlue100, colorBlue200, colorBlue300, colorBlue500, colorNeutral50, colorNeutral60, colorNeutral70, colorNeutral200, colorNeutral400, colorRed100, colorRed200, colorRed400, colorRed500, colorRed600, colorWhite, spacing1, spacing2, spacinghalf } from '../variables';
 
 const shadowFocus = '0 0 0 3px rgba(169, 209, 255, 1)';

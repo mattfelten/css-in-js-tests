@@ -1,7 +1,5 @@
-/** @jsx jsx */
 import React, { forwardRef } from 'react';
-import { jsx } from '@emotion/core';
-import classnames from 'classnames';
+import { cx } from 'emotion';
 import * as styles from './Button.css.js';
 
 /**
@@ -41,6 +39,7 @@ export const Button = forwardRef<HTMLElement, ButtonProps>(
 	(
 		{
 			children,
+			className,
 			color = 'default',
 			fill = 'solid',
 			inactive,
@@ -59,26 +58,29 @@ export const Button = forwardRef<HTMLElement, ButtonProps>(
 
 		const preventClicks = props.disabled || inactive || loading;
 
+		const ButtonClasses = cx(
+			className,
+			styles.button,
+			{[styles.blue]: color === 'primary'},
+			{[styles.grey]: color === 'default'},
+			{[styles.red]: color === 'negative'},
+
+			// { [styles['Button--solid']]: fill === 'solid' },
+			{[styles.outline]: fill === 'outline'},
+			{[styles.subtle]: fill === 'subtle'},
+
+			{[styles.disabled]: props.disabled},
+			{[styles.inactive]: preventClicks},
+			{[styles.loading]: loading},
+
+			{[styles.xsmall]: size === 'xsmall'},
+			{[styles.small]: size === 'small'},
+			{[styles.large]: size === 'large'},
+		);
+
 		return (
 			<ButtonElement
-				css={[
-					styles.button,
-
-					color === 'primary' && styles.blue,
-					color === 'default' && styles.grey,
-					color === 'negative' && styles.red,
-
-					fill === 'outline' && styles.outline,
-					fill === 'subtle' && styles.subtle,
-
-					props.disabled && styles.disabled,
-					preventClicks && styles.inactive,
-					loading && styles.loading,
-
-					size === 'xsmall' && styles.xsmall,
-					size === 'small' && styles.small,
-					size === 'large' && styles.large,
-				]}
+				className={ButtonClasses}
 				disabled={preventClicks}
 				role="button"
 				tabIndex={getTabIndex(ButtonElement)}
@@ -86,7 +88,7 @@ export const Button = forwardRef<HTMLElement, ButtonProps>(
 				ref={ref}
 				{...props}
 			>
-				<span css={styles.content}>
+				<span className={cx(styles.content)}>
 					{ children }
 				</span>
 			</ButtonElement>

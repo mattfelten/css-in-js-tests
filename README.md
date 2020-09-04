@@ -10,13 +10,19 @@ There are a lot of ways of setting an application architecture and not all of th
 - Each method will have completely self-defined build steps (no shared dependencies or configs) so recreating these outside the scope of this project is easier
 
 ### Experiment Methods
-- Global CSS
-	- Working
-- CSS Modules
-	- Working
-- Emotion
-	- Working. Style overriding is much different than CSS and needs a complete overhaul.
-- Stiches
-	- TODO: Doesn't render in Storybook. If I rename the story while Storybook is running, it appears but the component isn't found.
-- Styled Components
-- Others?
+#### Global CSS
+Working
+
+#### CSS Modules
+Working
+
+#### [Emotion](https://emotion.sh)
+Working. Style overriding is much different than CSS and needs a complete overhaul.
+
+#### [Stiches](https://stitches.dev)
+Doesn't render in Storybook. If I rename the story while Storybook is running, it appears but the component isn't found.
+
+#### Styled Components
+Not started
+
+Any others?

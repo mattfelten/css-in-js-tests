@@ -9,21 +9,25 @@
     "dist"
   ],
   "scripts": {
-    "build": "rm -rf dist && rollup -c",
-    "start": "rm -rf dist && rollup -c -w"
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
+    "start": "npm run build -- -w"
+  },
+  "dependencies": {
+    "emotion": "10.0.27"
+  },
+  "peerDependencies": {
+    "react": "16.13.1"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "15.0.0",
     "@rollup/plugin-node-resolve": "9.0.0",
     "@types/react": "16.9.49",
     "core-js": "3.6.5",
-    "react": "16.13.1",
+    "rimraf": "^3.0.2",
     "rollup": "2.26.9",
     "rollup-plugin-peer-deps-external": "2.2.3",
     "rollup-plugin-typescript2": "0.27.2",
     "typescript": "4.0.2"
-  },
-  "dependencies": {
-    "emotion": "10.0.27"
   }
 }

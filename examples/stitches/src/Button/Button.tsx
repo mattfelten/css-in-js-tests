@@ -51,6 +51,12 @@ export const Button = forwardRef<HTMLElement, ButtonProps>(
 
 		const preventClicks = props.disabled || inactive || loading;
 
+		const variants = {
+			color: color,
+			fill: fill,
+			size: size,
+		}
+
 		const attrs = {
 			as: element,
 			disabled: preventClicks,
@@ -62,7 +68,7 @@ export const Button = forwardRef<HTMLElement, ButtonProps>(
 		}
 
 		return (
-			<Base {...attrs}>
+			<Base {...variants} {...attrs}>
 				<Content>{ children }</Content>
 			</Base>
 		);
